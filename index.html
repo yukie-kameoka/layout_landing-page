@@ -1,22 +1,95 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    ```
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+
+    <title>MyBike</title>
+
     <link
       rel="stylesheet"
-      href="src/styles/main.scss"
+      href="./styles/main.scss"
     />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
+    ```
   </head>
+
   <body>
-    <h1>Landing Page</h1>
+    <header class="header">
+      <div class="header__content">
+        <a
+          href="/"
+          class="header__logo"
+        >
+          <img
+            src="./images/Logo (1).svg"
+            alt="MyBike logo"
+            class="header__logo-image"
+          />
+        </a>
+
+        ```
+        <div class="header__actions">
+          <a
+            href="tel:+10000000000"
+            class="header__phone"
+          >
+            <img
+              src="./images/Icon-Phone-call.svg"
+              alt="Phone"
+              class="header__icon"
+            />
+          </a>
+
+          <button
+            class="header__menu"
+            type="button"
+          >
+            <img
+              src="./images/Icon-Burger-menu.svg"
+              alt="Menu"
+              class="header__icon"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="header__hero">
+        <h1 class="header__title">Take the Streets</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <section
+        class="about"
+        id="about"
+      >
+        <h2 class="about__title">About</h2>
+
+        <p class="about__text">
+          We create bikes that change the way people move.
+        </p>
+      </section>
+
+      <section class="compare">
+        <h2 class="compare__title">Compare bikes</h2>
+      </section>
+
+      <section class="details">
+        <h2 class="details__title">Details</h2>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Contact us</h2>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+    ```
   </body>
 </html>

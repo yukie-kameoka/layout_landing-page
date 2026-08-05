@@ -1,0 +1,33 @@
+.hero {
+  &__content {
+    @include container;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  &__button {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: $button-height;
+
+    padding: 0 40px;
+
+    border-radius: $border-radius;
+
+    background-color: $color-primary;
+
+    color: $color-light;
+
+    transition: background-color $transition-time;
+
+    &:hover {
+      background-color: color.adjust($color-primary, $lightness: -10%);
+    }
+  }
+}

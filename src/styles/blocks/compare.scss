@@ -1,0 +1,19 @@
+.compare {
+  padding: 120px 0;
+
+  @include container;
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+
+    color: $color-main;
+  }
+
+  &__list {
+    margin-top: 60px;
+
+    display: flex;
+    gap: 24px;
+  }
+}
