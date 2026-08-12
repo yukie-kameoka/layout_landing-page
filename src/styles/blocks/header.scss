@@ -1,10 +1,7 @@
 .header {
   min-height: 100vh;
 
-  background-image: url('../../images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #1d1d1d;
 
   &__content {
     @include container;
