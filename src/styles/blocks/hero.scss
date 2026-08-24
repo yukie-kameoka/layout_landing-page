@@ -1,6 +1,19 @@
 .hero {
+  min-height: 100vh;
+
+  background-image: url('/hero_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   &__content {
     @include container;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__title {
@@ -10,24 +23,24 @@
 
   &__button {
     display: inline-flex;
-
     justify-content: center;
     align-items: center;
 
     height: $button-height;
-
     padding: 0 40px;
 
     border-radius: $border-radius;
 
     background-color: $color-primary;
-
     color: $color-light;
 
     transition: background-color $transition-time;
 
     &:hover {
-      background-color: color.adjust($color-primary, $lightness: -10%);
+      background-color: color.adjust(
+        $color-primary,
+        $lightness: -10%
+      );
     }
   }
 }
