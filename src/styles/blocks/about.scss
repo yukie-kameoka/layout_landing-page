@@ -19,3 +19,18 @@
     line-height: 24px;
   }
 }
+
+@media (max-width: 639px) {
+  .about {
+    padding: 80px 20px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__text {
+      margin-top: 24px;
+    }
+  }
+}

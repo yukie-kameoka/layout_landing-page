@@ -1,62 +1,56 @@
-.header {
-  min-height: 100vh;
+@media (max-width: 639px) {
+  .header {
+    &__content {
+      padding: 24px 20px;
+    }
 
-  background-color: #1d1d1d;
+    &__logo-image {
+      width: 140px;
+    }
 
-  &__content {
-    @include container;
+    &__actions {
+      gap: 20px;
+    }
 
-    padding: 36px 0;
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &__hero {
+      height: calc(100vh - 88px);
+
+      padding: 0 20px 48px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 52px;
+
+      max-width: 320px;
+    }
   }
 
-  &__logo-image {
-    width: 187px;
+  .menu {
+    padding: 0 20px;
+
+    &__top {
+      min-height: 80px;
+    }
+
+    &__nav {
+      margin-top: 40px;
+    }
+
+    &__phone {
+      margin-top: 40px;
+    }
   }
 
-  &__actions {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-
-  &__phone,
-  &__menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  &__menu {
-    cursor: pointer;
-  }
-
-  &__hero {
-    @include container;
-
-    height: calc(100vh - 110px);
-
-    display: flex;
-    align-items: flex-end;
-
-    padding-bottom: 80px;
-  }
-
-  &__title {
-    color: $color-white;
-
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 80px;
-
-    max-width: 500px;
+  .nav {
+    &__link {
+      font-size: 28px;
+      line-height: 36px;
+    }
   }
 }

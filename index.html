@@ -1,5 +1,5 @@
-<!doctype html>
 
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,17 +12,24 @@
     <title>MyBike</title>
 
     <link
+      rel="icon"
+      href="./src/images/Logo (1).svg"
+      type="image/svg+xml"
+    />
+
+    <link
       rel="stylesheet"
       href="./src/styles/main.scss"
     />
   </head>
 
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__content">
         <a
-          href="/layout_landing-page/"
+          href="#top"
           class="header__logo"
+          aria-label="MyBike - back to top"
         >
           <img
             src="./src/images/Logo (1).svg"
@@ -35,24 +42,26 @@
           <a
             href="tel:+10000000000"
             class="header__phone"
+            aria-label="Call MyBike"
           >
             <img
               src="./src/images/Icon-Phone-call.svg"
-              alt="Phone"
+              alt="phone"
               class="header__icon"
             />
           </a>
 
-          <button
+          <a
+            href="#menu"
             class="header__menu"
-            type="button"
+            aria-label="Open menu"
           >
             <img
               src="./src/images/Icon-Burger-menu.svg"
               alt="Menu"
               class="header__icon"
             />
-          </button>
+          </a>
         </div>
       </div>
 
@@ -61,7 +70,84 @@
       </div>
     </header>
 
-    <main class="main">
+    <div
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="menu__top">
+        <a
+          href="#top"
+          class="menu__logo"
+          aria-label="MyBike - back to top"
+        >
+          <img
+            src="./src/images/Logo (1).svg"
+            alt="MyBike logo"
+            class="header__logo-image"
+          />
+        </a>
+
+        <a
+          href="#"
+          class="menu__close"
+          aria-label="Close menu"
+        >
+          ×
+        </a>
+      </div>
+
+      <nav class="menu__nav nav">
+        <ul class="nav__links">
+          <li>
+            <a
+              href="#about"
+              class="nav__link"
+            >
+              About
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#compare"
+              class="nav__link"
+            >
+              Compare bikes
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#details"
+              class="nav__link"
+            >
+              Details
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contacts"
+              class="nav__link"
+            >
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        href="tel:+10000000000"
+        class="menu__phone"
+      >
+        +1 000 000 0000
+      </a>
+    </div>
+
+    <main
+      class="main"
+      id="top"
+    >
       <section
         class="about"
         id="about"
@@ -73,19 +159,186 @@
         </p>
       </section>
 
-      <section class="compare">
+      <section
+        class="compare"
+        id="compare"
+      >
         <h2 class="compare__title">Compare bikes</h2>
+
+        <div class="compare__list">
+          <article class="compare__card">
+            <a
+              href="#"
+              class="compare__image-link"
+              aria-label="View Agile Ride 3"
+            >
+              <img
+                src="./src/images/Agile ride 3.jpg"
+                alt="Agile Ride 3 bike"
+                class="compare__image"
+              />
+            </a>
+
+            <h3 class="compare__name">Agile Ride 3</h3>
+
+            <p class="compare__description">
+              Lightweight and agile bike designed for comfortable city rides.
+            </p>
+          </article>
+
+          <article class="compare__card">
+            <a
+              href="#"
+              class="compare__image-link"
+              aria-label="View Ride in town ST"
+            >
+              <img
+                src="./src/images/Ride in town ST.jpg"
+                alt="Ride in town ST bike"
+                class="compare__image"
+              />
+            </a>
+
+            <h3 class="compare__name">Ride in town ST</h3>
+
+            <p class="compare__description">
+              A practical city bike made for everyday urban transportation.
+            </p>
+          </article>
+
+          <article class="compare__card">
+            <a
+              href="#"
+              class="compare__image-link"
+              aria-label="View Sporty 4"
+            >
+              <img
+                src="./src/images/Sporty 4.jpg"
+                alt="Sporty 4 bike"
+                class="compare__image"
+              />
+            </a>
+
+            <h3 class="compare__name">Sporty 4</h3>
+
+            <p class="compare__description">
+              A sporty model combining performance, comfort and modern design.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <section class="details">
+      <section
+        class="details"
+        id="details"
+      >
         <h2 class="details__title">Details</h2>
+
+        <div class="details__content">
+          <p>
+            Discover bikes created for modern city life. Each model combines
+            thoughtful design, comfort and reliable performance.
+          </p>
+        </div>
       </section>
 
-      <section class="contacts">
+      <section
+        class="contacts"
+        id="contacts"
+      >
         <h2 class="contacts__title">Contact us</h2>
+
+        <div class="contacts__info">
+          <a href="tel:+10000000000">
+            +1 000 000 0000
+          </a>
+        </div>
+
+        <form
+          class="contacts__form"
+          onsubmit="this.reset(); return false;"
+        >
+          <label
+            class="contacts__field"
+            for="name"
+          >
+            <span>Name</span>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+          </label>
+
+          <label
+            class="contacts__field"
+            for="email"
+          >
+            <span>Email</span>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="example@email.com"
+              required
+            />
+          </label>
+
+          <label
+            class="contacts__field"
+            for="phone"
+          >
+            <span>Phone</span>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="+1 000 000 0000"
+              required
+            />
+          </label>
+
+          <label
+            class="contacts__field"
+            for="message"
+          >
+            <span>Message</span>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message"
+              required
+            ></textarea>
+          </label>
+
+          <button
+            class="contacts__button"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <a
+        href="#top"
+        class="footer__logo"
+        aria-label="MyBike - back to top"
+      >
+        <img
+          src="./src/images/Logo (1).svg"
+          alt="MyBike logo"
+          class="header__logo-image"
+        />
+      </a>
+    </footer>
   </body>
 </html>

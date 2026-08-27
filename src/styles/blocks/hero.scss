@@ -37,10 +37,7 @@
     transition: background-color $transition-time;
 
     &:hover {
-      background-color: color.adjust(
-        $color-primary,
-        $lightness: -10%
-      );
+      background-color: color.adjust($color-primary, $lightness: -10%);
     }
   }
 }
