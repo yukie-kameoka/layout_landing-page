@@ -1,5 +1,5 @@
-
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +23,10 @@
     />
   </head>
 
-  <body class="page">
+  <body
+    class="page"
+    id="top"
+  >
     <header class="header">
       <div class="header__content">
         <a
@@ -40,13 +43,13 @@
 
         <div class="header__actions">
           <a
-            href="tel:+10000000000"
+            href="tel:+12345555555"
             class="header__phone"
             aria-label="Call MyBike"
           >
             <img
               src="./src/images/Icon-Phone-call.svg"
-              alt="phone"
+              alt="Phone"
               class="header__icon"
             />
           </a>
@@ -66,11 +69,20 @@
       </div>
 
       <div class="header__hero">
-        <h1 class="header__title">Take the Streets</h1>
+        <div class="header__hero-content">
+          <h1 class="header__title">Take the Streets</h1>
+
+          <a
+            href="#contacts"
+            class="header__button"
+          >
+            Book a test ride
+          </a>
+        </div>
       </div>
     </header>
 
-    <div
+    <aside
       class="page__menu menu"
       id="menu"
     >
@@ -83,7 +95,7 @@
           <img
             src="./src/images/Logo (1).svg"
             alt="MyBike logo"
-            class="header__logo-image"
+            class="menu__logo-image"
           />
         </a>
 
@@ -98,25 +110,34 @@
 
       <nav class="menu__nav nav">
         <ul class="nav__links">
-          <li>
+          <li class="nav__item">
+            <a
+              href="#top"
+              class="nav__link"
+            >
+              Home
+            </a>
+          </li>
+
+          <li class="nav__item">
             <a
               href="#about"
               class="nav__link"
             >
-              About
+              About Us
             </a>
           </li>
 
-          <li>
+          <li class="nav__item">
             <a
               href="#compare"
               class="nav__link"
             >
-              Compare bikes
+              Compare Bikes
             </a>
           </li>
 
-          <li>
+          <li class="nav__item">
             <a
               href="#details"
               class="nav__link"
@@ -125,38 +146,46 @@
             </a>
           </li>
 
-          <li>
+          <li class="nav__item">
             <a
               href="#contacts"
               class="nav__link"
             >
-              Contact us
+              Contacts
             </a>
           </li>
         </ul>
       </nav>
 
       <a
-        href="tel:+10000000000"
+        href="tel:+12345555555"
         class="menu__phone"
       >
-        +1 000 000 0000
+        +1 234 555-55-55
       </a>
-    </div>
+    </aside>
 
-    <main
-      class="main"
-      id="top"
-    >
+    <main class="main">
       <section
         class="about"
         id="about"
       >
-        <h2 class="about__title">About</h2>
+        <div class="about__content">
+          <h2 class="about__title">Move Free</h2>
 
-        <p class="about__text">
-          We create bikes that change the way people move.
-        </p>
+          <div class="about__description">
+            <p>
+              We have heard about ego a lot. But what does ego actually mean?
+              The terminology sounds confusing and abstract. Its meaning even
+              differs based on context. Put simply, ego means “I” in Latin.
+            </p>
+
+            <p>
+              Shift your ride, not gears. Find the fastest way to move in the
+              city as the bike adapts intuitively to power the speed you need.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section
@@ -170,20 +199,23 @@
             <a
               href="#"
               class="compare__image-link"
-              aria-label="View Agile Ride 3"
+              aria-label="View Sporty 4"
             >
               <img
-                src="./src/images/Agile ride 3.jpg"
-                alt="Agile Ride 3 bike"
+                src="./src/images/Sporty 4.jpg"
+                alt="Sporty 4 bike"
                 class="compare__image"
               />
             </a>
 
-            <h3 class="compare__name">Agile Ride 3</h3>
+            <h3 class="compare__name">Sporty 4</h3>
 
             <p class="compare__description">
-              Lightweight and agile bike designed for comfortable city rides.
+              The iconic frame brought to a new performance height as a sporty,
+              active ride.
             </p>
+
+            <p class="compare__price">$ 2 590</p>
           </article>
 
           <article class="compare__card">
@@ -202,28 +234,34 @@
             <h3 class="compare__name">Ride in town ST</h3>
 
             <p class="compare__description">
-              A practical city bike made for everyday urban transportation.
+              An open frame for an upright riding position as the most
+              comfortable ride in town.
             </p>
+
+            <p class="compare__price">$ 2 590</p>
           </article>
 
           <article class="compare__card">
             <a
               href="#"
               class="compare__image-link"
-              aria-label="View Sporty 4"
+              aria-label="View Agile ride 3"
             >
               <img
-                src="./src/images/Sporty 4.jpg"
-                alt="Sporty 4 bike"
+                src="./src/images/Agile ride 3.jpg"
+                alt="Agile ride 3 bike"
                 class="compare__image"
               />
             </a>
 
-            <h3 class="compare__name">Sporty 4</h3>
+            <h3 class="compare__name">Agile ride 3</h3>
 
             <p class="compare__description">
-              A sporty model combining performance, comfort and modern design.
+              The lightweight frame that has earned its street tread as a sleek,
+              agile ride.
             </p>
+
+            <p class="compare__price">$ 2 090</p>
           </article>
         </div>
       </section>
@@ -232,98 +270,247 @@
         class="details"
         id="details"
       >
-        <h2 class="details__title">Details</h2>
+        <h2 class="details__title">The Details</h2>
 
-        <div class="details__content">
-          <p>
-            Discover bikes created for modern city life. Each model combines
-            thoughtful design, comfort and reliable performance.
-          </p>
+        <div class="details__grid">
+          <article class="details__item details__item--large">
+            <a
+              href="#"
+              class="details__image-link"
+              aria-label="Explore Auto Unlock details"
+            >
+              <img
+                src="./src/images/details1.jpg"
+                alt="Auto Unlock bike detail"
+                class="details__image"
+              />
+            </a>
+
+            <h3 class="details__subtitle">Auto Unlock</h3>
+
+            <p class="details__text">
+              The app senses when you're nearby to unlock automatically. GPS
+              tracking so you know where your bike is and can track it anytime.
+            </p>
+          </article>
+
+          <article class="details__item details__item--small">
+            <a
+              href="#"
+              class="details__image-link"
+              aria-label="Explore Range and Integrated lights details"
+            >
+              <img
+                src="./src/images/details2.jpg"
+                alt="Range and integrated lights"
+                class="details__image"
+              />
+            </a>
+
+            <h3 class="details__subtitle">Range &amp; Integrated lights</h3>
+
+            <p class="details__text">
+              The removable battery has up to 70km battery autonomy and weighs
+              only 2.4 kg. Lights integrated into the frame give you always-on
+              visibility day and night.
+            </p>
+          </article>
+
+          <article class="details__item details__item--small">
+            <a
+              href="#"
+              class="details__image-link"
+              aria-label="Explore Hydraulic disc brakes and Lightweight details"
+            >
+              <img
+                src="./src/images/details3.jpg"
+                alt="Hydraulic disc brakes and lightweight frame"
+                class="details__image"
+              />
+            </a>
+
+            <h3 class="details__subtitle">
+              Hydraulic disc brakes &amp; Lightweight
+            </h3>
+
+            <p class="details__text">
+              Brakes with total stopping power the second you make contact. The
+              lightweight frame keeps your ride comfortable and agile.
+            </p>
+          </article>
+
+          <article class="details__item details__item--small">
+            <a
+              href="#"
+              class="details__image-link"
+              aria-label="Explore bike technology"
+            >
+              <img
+                src="./src/images/details4.jpg"
+                alt="MyBike technology detail"
+                class="details__image"
+              />
+            </a>
+          </article>
+
+          <article class="details__item details__item--large">
+            <a
+              href="#"
+              class="details__image-link"
+              aria-label="Explore bike design"
+            >
+              <img
+                src="./src/images/details5.jpg"
+                alt="MyBike design detail"
+                class="details__image"
+              />
+            </a>
+          </article>
+
+          <article class="details__item details__item--small">
+            <a
+              href="#"
+              class="details__image-link"
+              aria-label="Explore bike frame"
+            >
+              <img
+                src="./src/images/details6.jpg"
+                alt="MyBike frame detail"
+                class="details__image"
+              />
+            </a>
+          </article>
         </div>
+
+        <a
+          href="#contacts"
+          class="details__button"
+        >
+          Explore
+        </a>
       </section>
 
       <section
         class="contacts"
         id="contacts"
       >
-        <h2 class="contacts__title">Contact us</h2>
+        <div class="contacts__content">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Contact us</h2>
 
-        <div class="contacts__info">
-          <a href="tel:+10000000000">
-            +1 000 000 0000
-          </a>
+            <div class="contacts__details">
+              <div class="contacts__detail">
+                <h3 class="contacts__label">Phone</h3>
+
+                <a
+                  href="tel:+12345555555"
+                  class="contacts__link"
+                >
+                  +1 234 555-55-55
+                </a>
+              </div>
+
+              <div class="contacts__detail">
+                <h3 class="contacts__label">Email</h3>
+
+                <a
+                  href="mailto:hello@miami.com"
+                  class="contacts__link"
+                >
+                  hello@miami.com
+                </a>
+              </div>
+
+              <div class="contacts__detail">
+                <h3 class="contacts__label">Address</h3>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=400+First+Ave+Suite+700+Minneapolis+MN+55401"
+                  class="contacts__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  400 first ave.
+                  <br />
+                  suite 700
+                  <br />
+                  Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contacts__form"
+            onsubmit="this.reset(); return false;"
+          >
+            <label
+              class="contacts__field"
+              for="name"
+            >
+              <span>Name</span>
+
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Hello, my name is Andrew"
+                required
+              />
+            </label>
+
+            <label
+              class="contacts__field"
+              for="phone"
+            >
+              <span>Phone</span>
+
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="+1 234 555-55-55"
+                required
+              />
+            </label>
+
+            <label
+              class="contacts__field"
+              for="email"
+            >
+              <span>Email</span>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="hello@miami.com"
+                required
+              />
+            </label>
+
+            <label
+              class="contacts__field"
+              for="message"
+            >
+              <span>Message</span>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message"
+                required
+              ></textarea>
+            </label>
+
+            <button
+              class="contacts__button"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
         </div>
-
-        <form
-          class="contacts__form"
-          onsubmit="this.reset(); return false;"
-        >
-          <label
-            class="contacts__field"
-            for="name"
-          >
-            <span>Name</span>
-
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Your name"
-              required
-            />
-          </label>
-
-          <label
-            class="contacts__field"
-            for="email"
-          >
-            <span>Email</span>
-
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="example@email.com"
-              required
-            />
-          </label>
-
-          <label
-            class="contacts__field"
-            for="phone"
-          >
-            <span>Phone</span>
-
-            <input
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="+1 000 000 0000"
-              required
-            />
-          </label>
-
-          <label
-            class="contacts__field"
-            for="message"
-          >
-            <span>Message</span>
-
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Write your message"
-              required
-            ></textarea>
-          </label>
-
-          <button
-            class="contacts__button"
-            type="submit"
-          >
-            Send
-          </button>
-        </form>
       </section>
     </main>
 
@@ -336,9 +523,11 @@
         <img
           src="./src/images/Logo (1).svg"
           alt="MyBike logo"
-          class="header__logo-image"
+          class="footer__logo-image"
         />
       </a>
+
+      <p class="footer__copyright">© 2013 Miami</p>
     </footer>
   </body>
 </html>
