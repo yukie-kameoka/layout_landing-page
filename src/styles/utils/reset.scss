@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  min-width: 320px;
+
   font-family: $font-main;
   color: $color-main;
   background-color: $color-white;
@@ -22,6 +24,12 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
 }
 
 button {

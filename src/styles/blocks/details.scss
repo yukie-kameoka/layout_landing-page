@@ -4,18 +4,93 @@
   @include container;
 
   &__title {
-    font-size: 48px;
-    line-height: 56px;
+    margin: 0;
 
     color: $color-main;
+    font-size: 48px;
+    line-height: 56px;
   }
 
-  &__content {
-    margin-top: 40px;
+  &__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-top: 60px;
+  }
+
+  &__item {
+    min-width: 0;
+  }
+
+  &__image-link {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+
+    object-fit: cover;
+
+    transition: transform $transition-time;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+
+    color: $color-main;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__text {
+    margin-top: 12px;
 
     color: $color-secondary;
-
+    font-size: 16px;
     line-height: 24px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: $button-height;
+    margin-top: 60px;
+
+    border-radius: $border-radius;
+
+    background-color: $color-primary;
+    color: $color-light;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: background-color $transition-time;
+
+    &:hover {
+      background-color: color.adjust($color-primary, $lightness: -10%);
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .details {
+    padding: 100px 32px;
+
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
@@ -28,8 +103,24 @@
       line-height: 48px;
     }
 
-    &__content {
-      margin-top: 24px;
+    &__grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    &__image {
+      min-height: 220px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__button {
+      margin-top: 40px;
     }
   }
 }
