@@ -1,0 +1,524 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>MyBike</title>
+
+    <link
+      rel="icon"
+      href="/layout_landing-page/assets/Logo-DgV43lEY.svg"
+      type="image/svg+xml"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" crossorigin href="/layout_landing-page/assets/index-CYycInp1.css">
+  </head>
+
+  <body
+    class="page"
+    id="top"
+  >
+    <header class="header">
+      <div class="header__content">
+        <a
+          href="#top"
+          class="header__logo"
+          aria-label="MyBike - back to top"
+        >
+          <img
+            src="data:image/svg+xml,%3csvg%20width='187'%20height='56'%20viewBox='0%200%20187%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M42.3067%205.20075V42.0788H33.2068V19.9625L24.8518%2042.0788H17.508L9.09993%2019.9099V42.0788H0V5.20075H10.7496L21.2332%2030.7317L31.6103%205.20075H42.3067Z'%20fill='white'/%3e%3cpath%20d='M77.9364%2012.7655L59.3108%2056H49.5191L56.3307%2041.0807L44.2507%2012.7655H54.415L61.2798%2031.0994L68.0915%2012.7655H77.9364Z'%20fill='white'/%3e%3cpath%20d='M102.597%2023.167C104.761%2023.6223%20106.499%2024.6904%20107.812%2026.3715C109.124%2028.0175%20109.781%2029.9087%20109.781%2032.045C109.781%2035.127%20108.681%2037.5785%20106.481%2039.3996C104.317%2041.1857%20101.284%2042.0788%2097.3814%2042.0788H79.9798V5.20075H96.7961C100.592%205.20075%20103.554%206.05879%20105.683%207.77486C107.847%209.49093%20108.929%2011.8199%20108.929%2014.7617C108.929%2016.9331%20108.344%2018.7367%20107.173%2020.1726C106.038%2021.6085%20104.512%2022.6066%20102.597%2023.167ZM89.0797%2020.1201H95.0399C96.53%2020.1201%2097.6653%2019.8049%2098.4458%2019.1745C99.2617%2018.5091%2099.6697%2017.546%2099.6697%2016.2852C99.6697%2015.0244%2099.2617%2014.0613%2098.4458%2013.3959C97.6653%2012.7305%2096.53%2012.3978%2095.0399%2012.3978H89.0797V20.1201ZM95.785%2034.8293C97.3105%2034.8293%2098.4812%2034.4966%2099.2972%2033.8311C100.149%2033.1307%20100.574%2032.1326%20100.574%2030.8368C100.574%2029.541%20100.131%2028.5253%2099.244%2027.7899C98.3925%2027.0544%2097.204%2026.6867%2095.6785%2026.6867H89.0797V34.8293H95.785Z'%20fill='white'/%3e%3cpath%20d='M118.388%209.71857C116.792%209.71857%20115.479%209.26329%20114.45%208.35272C113.457%207.40713%20112.96%206.25141%20112.96%204.88556C112.96%203.48468%20113.457%202.32896%20114.45%201.41839C115.479%200.472796%20116.792%200%20118.388%200C119.949%200%20121.226%200.472796%20122.22%201.41839C123.248%202.32896%20123.763%203.48468%20123.763%204.88556C123.763%206.25141%20123.248%207.40713%20122.22%208.35272C121.226%209.26329%20119.949%209.71857%20118.388%209.71857ZM122.911%2012.7655V42.0788H113.811V12.7655H122.911Z'%20fill='white'/%3e%3cpath%20d='M149.918%2042.0788L137.359%2025.7936V42.0788H128.259V5.20075H137.359V21.3809L149.811%205.20075H160.508L146.033%2023.272L161.04%2042.0788H149.918Z'%20fill='white'/%3e%3cpath%20d='M173.217%2012.3978V19.8574H185.404V26.7917H173.217V34.8818H187V42.0788H164.117V5.20075H187V12.3978H173.217Z'%20fill='white'/%3e%3c/svg%3e"
+            alt="MyBike logo"
+            class="header__logo-image"
+          />
+        </a>
+
+        <div class="header__actions">
+          <a
+            href="tel:+12345555555"
+            class="header__phone"
+            aria-label="Call MyBike"
+          >
+            <img
+              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_0_200)'%3e%3cpath%20d='M20.01%2015.38C18.78%2015.38%2017.59%2015.18%2016.48%2014.82C16.13%2014.7%2015.74%2014.79%2015.47%2015.06L13.9%2017.03C11.07%2015.68%208.42%2013.13%207.01%2010.2L8.96%208.54C9.23%208.26%209.31%207.87%209.2%207.52C8.83%206.41%208.64%205.22%208.64%203.99C8.64%203.45%208.19%203%207.65%203H4.19C3.65%203%203%203.24%203%203.99C3%2013.28%2010.73%2021%2020.01%2021C20.72%2021%2021%2020.37%2021%2019.82V16.37C21%2015.83%2020.55%2015.38%2020.01%2015.38Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_0_200'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+              alt="Phone"
+              class="header__icon"
+            />
+          </a>
+
+          <a
+            href="#menu"
+            class="header__menu"
+            aria-label="Open menu"
+          >
+            <img
+              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_26_312)'%3e%3cpath%20d='M3%2017C3%2017.5523%203.44772%2018%204%2018H20C20.5523%2018%2021%2017.5523%2021%2017C21%2016.4477%2020.5523%2016%2020%2016H4C3.44772%2016%203%2016.4477%203%2017ZM3%2012C3%2012.5523%203.44772%2013%204%2013H20C20.5523%2013%2021%2012.5523%2021%2012C21%2011.4477%2020.5523%2011%2020%2011H4C3.44772%2011%203%2011.4477%203%2012ZM4%206C3.44772%206%203%206.44772%203%207C3%207.55228%203.44772%208%204%208H20C20.5523%208%2021%207.55228%2021%207C21%206.44772%2020.5523%206%2020%206H4Z'%20fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_26_312'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+              alt="Menu"
+              class="header__icon"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="hero">
+        <img
+          src="/layout_landing-page/assets/hero_bg-DqS6Rh2c.jpg"
+          alt="MyBike bicycle on the street"
+          class="hero__background"
+        />
+
+        <div class="hero__content">
+          <h1 class="hero__title">Take the Streets</h1>
+        </div>
+      </div>
+
+    </header>
+
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <div class="menu__top">
+        <a
+          href="#top"
+          class="menu__logo"
+          aria-label="MyBike - back to top"
+        >
+          <img
+            src="data:image/svg+xml,%3csvg%20width='187'%20height='56'%20viewBox='0%200%20187%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M42.3067%205.20075V42.0788H33.2068V19.9625L24.8518%2042.0788H17.508L9.09993%2019.9099V42.0788H0V5.20075H10.7496L21.2332%2030.7317L31.6103%205.20075H42.3067Z'%20fill='white'/%3e%3cpath%20d='M77.9364%2012.7655L59.3108%2056H49.5191L56.3307%2041.0807L44.2507%2012.7655H54.415L61.2798%2031.0994L68.0915%2012.7655H77.9364Z'%20fill='white'/%3e%3cpath%20d='M102.597%2023.167C104.761%2023.6223%20106.499%2024.6904%20107.812%2026.3715C109.124%2028.0175%20109.781%2029.9087%20109.781%2032.045C109.781%2035.127%20108.681%2037.5785%20106.481%2039.3996C104.317%2041.1857%20101.284%2042.0788%2097.3814%2042.0788H79.9798V5.20075H96.7961C100.592%205.20075%20103.554%206.05879%20105.683%207.77486C107.847%209.49093%20108.929%2011.8199%20108.929%2014.7617C108.929%2016.9331%20108.344%2018.7367%20107.173%2020.1726C106.038%2021.6085%20104.512%2022.6066%20102.597%2023.167ZM89.0797%2020.1201H95.0399C96.53%2020.1201%2097.6653%2019.8049%2098.4458%2019.1745C99.2617%2018.5091%2099.6697%2017.546%2099.6697%2016.2852C99.6697%2015.0244%2099.2617%2014.0613%2098.4458%2013.3959C97.6653%2012.7305%2096.53%2012.3978%2095.0399%2012.3978H89.0797V20.1201ZM95.785%2034.8293C97.3105%2034.8293%2098.4812%2034.4966%2099.2972%2033.8311C100.149%2033.1307%20100.574%2032.1326%20100.574%2030.8368C100.574%2029.541%20100.131%2028.5253%2099.244%2027.7899C98.3925%2027.0544%2097.204%2026.6867%2095.6785%2026.6867H89.0797V34.8293H95.785Z'%20fill='white'/%3e%3cpath%20d='M118.388%209.71857C116.792%209.71857%20115.479%209.26329%20114.45%208.35272C113.457%207.40713%20112.96%206.25141%20112.96%204.88556C112.96%203.48468%20113.457%202.32896%20114.45%201.41839C115.479%200.472796%20116.792%200%20118.388%200C119.949%200%20121.226%200.472796%20122.22%201.41839C123.248%202.32896%20123.763%203.48468%20123.763%204.88556C123.763%206.25141%20123.248%207.40713%20122.22%208.35272C121.226%209.26329%20119.949%209.71857%20118.388%209.71857ZM122.911%2012.7655V42.0788H113.811V12.7655H122.911Z'%20fill='white'/%3e%3cpath%20d='M149.918%2042.0788L137.359%2025.7936V42.0788H128.259V5.20075H137.359V21.3809L149.811%205.20075H160.508L146.033%2023.272L161.04%2042.0788H149.918Z'%20fill='white'/%3e%3cpath%20d='M173.217%2012.3978V19.8574H185.404V26.7917H173.217V34.8818H187V42.0788H164.117V5.20075H187V12.3978H173.217Z'%20fill='white'/%3e%3c/svg%3e"
+            alt="MyBike logo"
+            class="menu__logo-image"
+          />
+        </a>
+
+        <a
+          href="#"
+          class="menu__close"
+          aria-label="Close menu"
+        >
+          ×
+        </a>
+      </div>
+
+      <nav class="menu__nav nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a
+              href="#top"
+              class="nav__link"
+            >
+              Home
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              href="#about"
+              class="nav__link"
+            >
+              About Us
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              href="#compare"
+              class="nav__link"
+            >
+              Compare Bikes
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              href="#details"
+              class="nav__link"
+            >
+              Details
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              href="#contacts"
+              class="nav__link"
+            >
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        href="tel:+12345555555"
+        class="menu__phone"
+      >
+        +1 234 555-55-55
+      </a>
+    </aside>
+
+    <main class="main">
+      <section
+        class="about"
+        id="about"
+      >
+        <div class="about__content">
+          <h2 class="about__title">Move Free</h2>
+
+          <div class="about__description">
+            <p>
+              Shift your ride, not gears. Find the fastest way to move in
+              the city as the bike adapts intuitively to power the speed
+              you need.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="compare"
+        id="compare"
+      >
+        <h2 class="compare__title">Compare bikes</h2>
+
+        <div class="compare__list">
+          <article class="compare__card">
+            <a
+              href="#"
+              class="compare__image-link"
+              aria-label="View Sporty 4"
+            >
+              <img
+                src="/layout_landing-page/assets/Sporty%204-CvPmBOSj.png"
+                alt="Sporty 4 bike"
+                class="compare__image"
+              />
+            </a>
+
+            <h3 class="compare__name">Sporty 4</h3>
+
+            <p class="compare__description">
+              The iconic frame brought to a new performance height as a sporty,
+              active ride.
+            </p>
+
+            <p class="compare__price">$ 2 590</p>
+          </article>
+
+          <article class="compare__card">
+            <a
+              href="#"
+              class="compare__image-link"
+              aria-label="View Ride in town ST"
+            >
+              <img
+                src="/layout_landing-page/assets/Ride%20in%20town%20ST-BjDdvER_.jpg"
+                alt="Ride in town ST bike"
+                class="compare__image"
+              />
+            </a>
+
+            <h3 class="compare__name">Ride in town ST</h3>
+
+            <p class="compare__description">
+              An open frame for an upright riding position as the most
+              comfortable ride in town.
+            </p>
+
+            <p class="compare__price">$ 2 590</p>
+          </article>
+
+          <article class="compare__card">
+            <a
+              href="#"
+              class="compare__image-link"
+              aria-label="View Agile ride 3"
+            >
+              <img
+                src="/layout_landing-page/assets/Agile%20ride%203-BfuF2dpV.jpg"
+                alt="Agile ride 3 bike"
+                class="compare__image"
+              />
+            </a>
+
+            <h3 class="compare__name">Agile ride 3</h3>
+
+            <p class="compare__description">
+              The lightweight frame that has earned its street tread as a sleek,
+              agile ride.
+            </p>
+
+            <p class="compare__price">$ 2 090</p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="details"
+        id="details"
+      >
+        <h2 class="details__title">The Details</h2>
+
+        <div class="details__rows">
+          <article class="details__row">
+            <div class="details__images">
+              <a
+                href="#"
+                class="details__image-link"
+                aria-label="Explore Auto Unlock details"
+              >
+                <img
+                  src="/layout_landing-page/assets/details1-JDx7dM0a.jpg"
+                  alt="Auto Unlock bike detail"
+                  class="details__image"
+                />
+              </a>
+
+              <a
+                href="#"
+                class="details__image-link details__image-link--small"
+                aria-label="Explore Auto Unlock details"
+              >
+                <img
+                  src="/layout_landing-page/assets/details4-DO-Sytw8.jpg"
+                  alt="MyBike app detail"
+                  class="details__image"
+                />
+              </a>
+            </div>
+
+            <div class="details__text">
+              <h3 class="details__subtitle">Auto Unlock</h3>
+
+              <p class="details__text-body">
+                The app senses when you're nearby to unlock automatically. GPS
+                tracking so you know where your bike is and can track it anytime.
+              </p>
+            </div>
+          </article>
+
+          <article class="details__row">
+            <div class="details__images">
+              <a
+                href="#"
+                class="details__image-link"
+                aria-label="Explore Range and Integrated lights details"
+              >
+                <img
+                  src="/layout_landing-page/assets/details2-Du576u8Z.jpg"
+                  alt="Range and integrated lights"
+                  class="details__image"
+                />
+              </a>
+
+              <a
+                href="#"
+                class="details__image-link details__image-link--small"
+                aria-label="Explore Range and Integrated lights details"
+              >
+                <img
+                  src="/layout_landing-page/assets/details5-DhZMMy3M.jpg"
+                  alt="MyBike design detail"
+                  class="details__image"
+                />
+              </a>
+            </div>
+
+            <div class="details__text">
+              <h3 class="details__subtitle">Range &amp; Integrated lights</h3>
+
+              <p class="details__text-body">
+                The removable battery has up to 70km battery autonomy and weighs
+                only 2.4 kg. Lights integrated into the frame give you always-on
+                visibility day and night.
+              </p>
+            </div>
+          </article>
+
+          <article class="details__row">
+            <div class="details__images">
+              <a
+                href="#"
+                class="details__image-link details__image-link--small"
+                aria-label="Explore Hydraulic disc brakes details"
+              >
+                <img
+                  src="/layout_landing-page/assets/details6-C-CwSvam.jpg"
+                  alt="MyBike frame detail"
+                  class="details__image"
+                />
+              </a>
+
+              <a
+                href="#"
+                class="details__image-link"
+                aria-label="Explore Hydraulic disc brakes details"
+              >
+                <img
+                  src="/layout_landing-page/assets/details3-Cy3k5ol5.jpg"
+                  alt="Hydraulic disc brakes and lightweight frame"
+                  class="details__image"
+                />
+              </a>
+            </div>
+
+            <div class="details__text">
+              <h3 class="details__subtitle">
+                Hydraulic disc brakes &amp; Lightweight
+              </h3>
+
+              <p class="details__text-body">
+                Brakes with total stopping power the second you make contact. The
+                removable battery has up to 70km battery autonomy and weighs only
+                2.4 kg. Lights integrated into the frame give you always-on
+                visibility day and night.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <a
+          href="#contacts"
+          class="details__button"
+        >
+          Explore
+        </a>
+      </section>
+
+      <section
+        class="contacts"
+        id="contacts"
+      >
+        <div class="contacts__content">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Contact us</h2>
+
+            <div class="contacts__details">
+              <div class="contacts__detail">
+                <h3 class="contacts__label">Phone</h3>
+
+                <a
+                  href="tel:+12345555555"
+                  class="contacts__link"
+                >
+                  +1 234 555-55-55
+                </a>
+              </div>
+
+              <div class="contacts__detail">
+                <h3 class="contacts__label">Email</h3>
+
+                <a
+                  href="mailto:hello@miami.com"
+                  class="contacts__link"
+                >
+                  hello@miami.com
+                </a>
+              </div>
+
+              <div class="contacts__detail">
+                <h3 class="contacts__label">Address</h3>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=400+First+Ave+Suite+700+Minneapolis+MN+55401"
+                  class="contacts__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  400 first ave.
+                  <br />
+                  suite 700
+                  <br />
+                  Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contacts__form"
+            onsubmit="this.reset(); return false;"
+          >
+            <label
+              class="contacts__field"
+              for="name"
+            >
+              <span>Name</span>
+
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Name"
+                required
+              />
+            </label>
+
+            <label
+              class="contacts__field"
+              for="email"
+            >
+              <span>Email</span>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+
+            <label
+              class="contacts__field"
+              for="message"
+            >
+              <span>Message</span>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </label>
+
+            <button
+              class="contacts__button"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img
+        src="/layout_landing-page/assets/footer-DDxGBW4O.jpg"
+        alt="Cyclists riding through the city street"
+        class="footer__banner"
+      />
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2013 Miami</p>
+      </div>
+    </footer>
+  </body>
+</html>
