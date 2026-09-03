@@ -12,15 +12,25 @@
 
     <link
       rel="icon"
-      href="./src/images/Logo (1).svg"
+      href="./src/images/Logo.svg"
       type="image/svg+xml"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
     />
 
     <link
       rel="stylesheet"
       href="./src/styles/main.scss"
     />
-    ```
   </head>
 
   <body
@@ -35,7 +45,7 @@
           aria-label="MyBike - back to top"
         >
           <img
-            src="./src/images/Logo (1).svg"
+            src="./src/images/Logo.svg"
             alt="MyBike logo"
             class="header__logo-image"
           />
@@ -69,17 +79,17 @@
       </div>
 
       <div class="hero">
+        <img
+          src="./src/images/hero_bg.jpg"
+          alt="MyBike bicycle on the street"
+          class="hero__background"
+        />
+
         <div class="hero__content">
           <h1 class="hero__title">Take the Streets</h1>
-
-          <a
-            href="#contacts"
-            class="hero__button"
-          >
-            Book a test ride
-          </a>
         </div>
       </div>
+
     </header>
 
     <aside
@@ -175,14 +185,9 @@
 
           <div class="about__description">
             <p>
-              We have heard about ego a lot. But what does ego actually mean?
-              The terminology sounds confusing and abstract. Its meaning even
-              differs based on context. Put simply, ego means “I” in Latin.
-            </p>
-
-            <p>
-              Shift your ride, not gears. Find the fastest way to move in the
-              city as the bike adapts intuitively to power the speed you need.
+              Shift your ride, not gears. Find the fastest way to move in
+              the city as the bike adapts intuitively to power the speed
+              you need.
             </p>
           </div>
         </div>
@@ -202,7 +207,7 @@
               aria-label="View Sporty 4"
             >
               <img
-                src="./src/images/Sporty 4.jpg"
+                src="./src/images/Sporty 4.png"
                 alt="Sporty 4 bike"
                 class="compare__image"
               />
@@ -272,113 +277,121 @@
       >
         <h2 class="details__title">The Details</h2>
 
-        <div class="details__grid">
-          <article class="details__item details__item--large">
-            <a
-              href="#"
-              class="details__image-link"
-              aria-label="Explore Auto Unlock details"
-            >
-              <img
-                src="./src/images/details1.jpg"
-                alt="Auto Unlock bike detail"
-                class="details__image"
-              />
-            </a>
+        <div class="details__rows">
+          <article class="details__row">
+            <div class="details__images">
+              <a
+                href="#"
+                class="details__image-link"
+                aria-label="Explore Auto Unlock details"
+              >
+                <img
+                  src="./src/images/details1.jpg"
+                  alt="Auto Unlock bike detail"
+                  class="details__image"
+                />
+              </a>
 
-            <h3 class="details__subtitle">Auto Unlock</h3>
+              <a
+                href="#"
+                class="details__image-link details__image-link--small"
+                aria-label="Explore Auto Unlock details"
+              >
+                <img
+                  src="./src/images/details4.jpg"
+                  alt="MyBike app detail"
+                  class="details__image"
+                />
+              </a>
+            </div>
 
-            <p class="details__text">
-              The app senses when you're nearby to unlock automatically. GPS
-              tracking so you know where your bike is and can track it anytime.
-            </p>
+            <div class="details__text">
+              <h3 class="details__subtitle">Auto Unlock</h3>
+
+              <p class="details__text-body">
+                The app senses when you're nearby to unlock automatically. GPS
+                tracking so you know where your bike is and can track it anytime.
+              </p>
+            </div>
           </article>
 
-          <article class="details__item details__item--small">
-            <a
-              href="#"
-              class="details__image-link"
-              aria-label="Explore Range and Integrated lights details"
-            >
-              <img
-                src="./src/images/details2.jpg"
-                alt="Range and integrated lights"
-                class="details__image"
-              />
-            </a>
+          <article class="details__row">
+            <div class="details__images">
+              <a
+                href="#"
+                class="details__image-link"
+                aria-label="Explore Range and Integrated lights details"
+              >
+                <img
+                  src="./src/images/details2.jpg"
+                  alt="Range and integrated lights"
+                  class="details__image"
+                />
+              </a>
 
-            <h3 class="details__subtitle">Range &amp; Integrated lights</h3>
+              <a
+                href="#"
+                class="details__image-link details__image-link--small"
+                aria-label="Explore Range and Integrated lights details"
+              >
+                <img
+                  src="./src/images/details5.jpg"
+                  alt="MyBike design detail"
+                  class="details__image"
+                />
+              </a>
+            </div>
 
-            <p class="details__text">
-              The removable battery has up to 70km battery autonomy and weighs
-              only 2.4 kg. Lights integrated into the frame give you always-on
-              visibility day and night.
-            </p>
+            <div class="details__text">
+              <h3 class="details__subtitle">Range &amp; Integrated lights</h3>
+
+              <p class="details__text-body">
+                The removable battery has up to 70km battery autonomy and weighs
+                only 2.4 kg. Lights integrated into the frame give you always-on
+                visibility day and night.
+              </p>
+            </div>
           </article>
 
-          <article class="details__item details__item--small">
-            <a
-              href="#"
-              class="details__image-link"
-              aria-label="Explore Hydraulic disc brakes and Lightweight details"
-            >
-              <img
-                src="./src/images/details3.jpg"
-                alt="Hydraulic disc brakes and lightweight frame"
-                class="details__image"
-              />
-            </a>
+          <article class="details__row">
+            <div class="details__images">
+              <a
+                href="#"
+                class="details__image-link details__image-link--small"
+                aria-label="Explore Hydraulic disc brakes details"
+              >
+                <img
+                  src="./src/images/details6.jpg"
+                  alt="MyBike frame detail"
+                  class="details__image"
+                />
+              </a>
 
-            <h3 class="details__subtitle">
-              Hydraulic disc brakes &amp; Lightweight
-            </h3>
+              <a
+                href="#"
+                class="details__image-link"
+                aria-label="Explore Hydraulic disc brakes details"
+              >
+                <img
+                  src="./src/images/details3.jpg"
+                  alt="Hydraulic disc brakes and lightweight frame"
+                  class="details__image"
+                />
+              </a>
+            </div>
 
-            <p class="details__text">
-              Brakes with total stopping power the second you make contact. The
-              lightweight frame keeps your ride comfortable and agile.
-            </p>
-          </article>
+            <div class="details__text">
+              <h3 class="details__subtitle">
+                Hydraulic disc brakes &amp; Lightweight
+              </h3>
 
-          <article class="details__item details__item--small">
-            <a
-              href="#"
-              class="details__image-link"
-              aria-label="Explore bike technology"
-            >
-              <img
-                src="./src/images/details4.jpg"
-                alt="MyBike technology detail"
-                class="details__image"
-              />
-            </a>
-          </article>
-
-          <article class="details__item details__item--large">
-            <a
-              href="#"
-              class="details__image-link"
-              aria-label="Explore bike design"
-            >
-              <img
-                src="./src/images/details5.jpg"
-                alt="MyBike design detail"
-                class="details__image"
-              />
-            </a>
-          </article>
-
-          <article class="details__item details__item--small">
-            <a
-              href="#"
-              class="details__image-link"
-              aria-label="Explore bike frame"
-            >
-              <img
-                src="./src/images/details6.jpg"
-                alt="MyBike frame detail"
-                class="details__image"
-              />
-            </a>
+              <p class="details__text-body">
+                Brakes with total stopping power the second you make contact. The
+                removable battery has up to 70km battery autonomy and weighs only
+                2.4 kg. Lights integrated into the frame give you always-on
+                visibility day and night.
+              </p>
+            </div>
           </article>
         </div>
 
@@ -454,22 +467,7 @@
                 id="name"
                 name="name"
                 type="text"
-                placeholder="Hello, my name is Andrew"
-                required
-              />
-            </label>
-
-            <label
-              class="contacts__field"
-              for="phone"
-            >
-              <span>Phone</span>
-
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="+1 234 555-55-55"
+                placeholder="Name"
                 required
               />
             </label>
@@ -484,7 +482,7 @@
                 id="email"
                 name="email"
                 type="email"
-                placeholder="hello@miami.com"
+                placeholder="Email"
                 required
               />
             </label>
@@ -498,7 +496,7 @@
               <textarea
                 id="message"
                 name="message"
-                placeholder="Write your message"
+                placeholder="Message"
                 required
               ></textarea>
             </label>
@@ -515,19 +513,15 @@
     </main>
 
     <footer class="footer">
-      <a
-        href="#top"
-        class="footer__logo"
-        aria-label="MyBike - back to top"
-      >
-        <img
-          src="./src/images/Logo (1).svg"
-          alt="MyBike logo"
-          class="footer__logo-image"
-        />
-      </a>
+      <img
+        src="./src/images/footer_bg.jpg"
+        alt="Cyclists riding through the city street"
+        class="footer__banner"
+      />
 
-      <p class="footer__copyright">© 2013 Brazil</p>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2013 Miami</p>
+      </div>
     </footer>
   </body>
 </html>

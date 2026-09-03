@@ -13,12 +13,14 @@
     justify-content: space-between;
 
     width: 100%;
-    padding: 36px 40px;
+    box-sizing: border-box;
+    padding: 36px 120px;
   }
 
   &__logo {
     display: block;
-    width: 130px;
+    width: 187px;
+    flex-shrink: 0;
   }
 
   &__logo-image {
@@ -30,7 +32,8 @@
   &__actions {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 32px;
+    flex-shrink: 0;
   }
 
   &__phone,
@@ -39,75 +42,18 @@
     align-items: center;
     justify-content: center;
 
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+
     text-decoration: none;
   }
 
   &__icon {
     display: block;
-    width: 24px;
-    height: 24px;
-  }
-
-  &__hero {
-    position: relative;
-
-    display: flex;
-    align-items: flex-end;
-
-    min-height: 700px;
-    height: 100vh;
-    padding: 0 40px 80px;
-
-    background-image: url('../../images/hero_bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__hero-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  &__title {
-    max-width: 700px;
-    margin: 0 0 40px;
-
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 0.95;
-    color: #fff;
-  }
-
-  &__button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    min-width: 220px;
-    min-height: 56px;
-    padding: 0 32px;
-
-    border-radius: 8px;
-
-    background-color: #fff;
-    color: #1d1d1d;
-
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-
-    transition:
-      background-color 0.3s ease,
-      color 0.3s ease,
-      transform 0.3s ease;
-
-    &:hover {
-      background-color: #1d1d1d;
-      color: #fff;
-      transform: translateY(-2px);
-    }
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
   }
 }
 
@@ -217,14 +163,6 @@
     &__content {
       padding: 28px 32px;
     }
-
-    &__hero {
-      padding: 0 32px 64px;
-    }
-
-    &__title {
-      font-size: 64px;
-    }
   }
 
   .menu {
@@ -246,27 +184,11 @@
       gap: 20px;
     }
 
+    &__phone,
+    &__menu,
     &__icon {
       width: 20px;
       height: 20px;
-    }
-
-    &__hero {
-      min-height: 600px;
-      height: calc(100vh - 88px);
-      padding: 0 20px 48px;
-    }
-
-    &__title {
-      max-width: 320px;
-      margin-bottom: 28px;
-
-      font-size: 48px;
-      line-height: 52px;
-    }
-
-    &__button {
-      width: 100%;
     }
   }
 

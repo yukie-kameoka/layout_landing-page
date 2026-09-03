@@ -1,28 +1,33 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 160px;
-  padding: 32px 20px;
-
-  background-color: $color-main;
-
-  &__logo {
+  &__banner {
     display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
   }
 
-  &__logo-image {
-    width: 187px;
-    height: auto;
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 48px 20px;
   }
 
   &__copyright {
-    margin-top: 20px;
-
     color: $color-white;
-    font-size: 14px;
-    line-height: 20px;
+    font-family: $font-footer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.25;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 639px) {
+  .footer__banner {
+    height: 280px;
   }
 }
